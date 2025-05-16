@@ -64,7 +64,7 @@
 ```bash
 stvsh [shell_command] -- [shell_options]
 ```
-- **示例**：`stvsh "ls -l" -- --brief`
+- **示例**：`stvsh ls -l -- --brief`
 
 #### 无分隔符模式
 ```bash
