@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stv_terminal"
+version = "0.0.0+UnderDev"
+authors = [
+    { name = "星灿长风v(StarWindv)", email = "starwindv.stv@gmail.com"}
+]
+description = "自定义终端"
+readme = ""
+license = { text = "MIT" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    'filetype',
+    'stv_utils>=0.0.6'
+]
+urls = { "Homepage" = "https://github.com/StarWindv" }
+
+[project.scripts]
+stvsh = "stv_terminal.main:main"
+
+[tool.setuptools]
+license-files = []
+
+[tool.setuptools.package-data]
+"stv_terminal" = ["doc/*.txt"]
