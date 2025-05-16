@@ -33,7 +33,7 @@ def main():
     """启动终端循环"""
     register_builtin_commands()
     print(f"|> 初始化终端变量")
-    log_path = os.path.join(os.path.expanduser("~"), "stvlog/log.txt")
+    log_path = os.path.join(os.path.expanduser("~"), ".stv_terminal/log/log.txt")
     username = getuser()
     print(f"|> 启动终端循环")
 
