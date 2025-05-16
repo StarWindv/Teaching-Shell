@@ -14,7 +14,11 @@ parse_result = parser()
 if parse_result is None:
     need_brief = False
 else:
-    need_brief = parse_result[-1]["brief"]
+    _, __, need_brief = parse_result
+    if need_brief is None:
+        need_brief == False
+    else:
+        need_brief = need_brief["brief"]
 
 @suppress_print(start_str="|>", suppress=need_brief)
 @colorize
