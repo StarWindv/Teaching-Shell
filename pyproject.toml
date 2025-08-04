@@ -17,7 +17,7 @@ classifiers = [
 ]
 dependencies = [
     'filetype',
-    'stv_utils>=0.0.6'
+    'stv_utils==0.0.6'
 ]
 urls = { "Homepage" = "https://github.com/StarWindv" }
 
@@ -28,4 +28,5 @@ stvsh = "stv_terminal.main:main"
 license-files = []
 
 [tool.setuptools.package-data]
+
 "stv_terminal" = ["doc/*.txt"]
